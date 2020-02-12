@@ -1,47 +1,48 @@
-<!DOCTYPE html?
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Dennis Ou Profile</title>
+    <title>Yangzhi Ou Profile</title>
+    <link rel="stylesheet" href="Style1.css">
   </head>
-  <a href="#Personal Information">Personal Information</a>
-  <a href="#Education">Education</a>
-  <a href="#Work Experience">Work Experience/Internships</a>
-  <a href="#Programming Skills">Programming Skills</a>
-  <a href="#Interests">Interests</a>
-  <a href="#Favorite Websites">Favorite Websites</a>
-  <a href="#Contact Me">Contact Me</a>
 <body style="background-color: pink">
-  <h1> Yangzhi Ou Profile </h1>
 
-  <div id="Personal Information">
-    <h2><span style="color:blue"> Personal Information </span></h2>
-      <img src="ProfilePic.jpg" alt="My headshot" width="200" height="250" align="left">
-      <p><b>Name: </b>Yangzhi Ou<br>
-         <b>Major: </b>Computer Science
-      </p>
+  <div id="navigation">
+    <a href="#PersonalInformation">Personal Information</a>
+    <a href="#Education">Education</a>
+    <a href="#WorkExperience">Work Experience/Internships</a>
+    <a href="#ProgrammingSkills">Programming Skills</a>
+    <a href="#Interests">Interests</a>
+    <a href="#FavoriteWebsites">Favorite Websites</a>
+    <a href="#Projects">Projects</a>
+    <a href="#ContactMe">Contact Me</a>
   </div>
 
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+  <h1 style="color:black; text-align:center"> Yangzhi Ou Profile </h1>
+
+<div class="bigflex">
+
+<div class="flex">
+  <div id="PersonalInformation">
+    <h2><span style="color:black"> Personal Information </span></h2>
+      <img src="ProfilePic.jpg" alt="My headshot" width="200" height="250">
+      <span class="caption">
+         <b style="color:black">Name: </b>Yangzhi Ou<br>
+         <b style="color:black">Major: </b>Computer Science<br>
+         <b style="color:black">From: </b> <a href="https://en.wikipedia.org/wiki/Brooklyn" target="_blank">Brooklyn, NY</a>
+      </span>
+  </div>
 
   <div id="Education">
-    <h2> <span style="color:blue"> Education </span> </h2>
+    <h2> <span style="color:black"> Education </span> </h2>
       <p>I am currently pursuing a Bachelor's Degree in computer science at St. John's University.
         Prior to St. John's University, I received my high school diploma from Leadership and Public Service High School, which is located in Lower Manhattan.
-        I did not have a focus when I was in high school, just a simply took core classes.</p>
+        I did not have a focus when I was in high school, just a simply took core classes and AP classes.</p>
   </div>
+</div>
 
-  <div id="Work Experience">
-    <h2> <span style="color:blue">Work Experience </span></h2>
+<div class="flex2">
+  <div id="WorkExperience">
+    <h2> <span style="color:black">Work Experience </span></h2>
     <ul>
       <li><b>Sales Associate at Best Buy</b> (Current)</li>
       <li><b>Part Time Athlete at Nike Flushing</b> (May 2017-January 2019)</li>
@@ -50,8 +51,8 @@
     </ul>
   </div>
 
-  <div id="Programming Skills">
-    <h2> <span style="color:blue">Programming Skills </span></h2>
+  <div id="ProgrammingSkills">
+    <h2> <span style="color:black">Programming Skills </span></h2>
     <table>
       <tr>
         <th>Language</th>
@@ -75,9 +76,30 @@
       </tr>
     </table>
   </div>
+</div>
+
+<div id="ContactMe">
+  <h3><span style="color:black">Contact Me</span></h3>
+  <form>
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your First Name"><br>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your Last Name"><br>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Your message" style="height:200px; width:250px"></textarea><br>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+</div>
 
   <div id="Interests">
-    <h2><span style="color:blue">Interests</span></h2>
+    <h2><span style="color:black">Interests</span></h2>
     <ul>
       <li><b>Hobbies</b></li>
       <ul>
@@ -98,8 +120,8 @@
     </ul>
   </div>
 
-  <div id="Favorite Websites">
-    <h2><span style="color:blue">Favorite Websites</span></h2>
+  <div id="FavoriteWebsites">
+    <h2><span style="color:black">Favorite Websites</span></h2>
     <ul>
       <li><a href="https://www.youtube.com" target="_blank">Youtube</a>
         is my favorite website to waste my time on.</li>
@@ -112,24 +134,28 @@
     </ul>
   </div>
 
-  <div id="Contact Me">
-    <h3><span style="color:blue">Contact Me</span></h3>
-    <form>
-
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your First Name"><br>
-
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your Last Name"><br>
-
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Your message" style="height:200px"></textarea><br>
-
-      <input type="submit" value="Submit">
-
-    </form>
+  <div id="Projects">
+    <h2><span style="color:black">Projects</span></h2>
+    <ol>
+      <li>Project 1 Milestone 1: Created a <a href="https://dennisou0417.github.io/Project1.html" target="_blank">Profile Page</a> with HTML 01/30/2020 </li>
+      <li>Project 1 Milestone 2: Created a <a href="https://dennisou0417.github.io/Project1.html" target="_blank">Profile Page</a> with HTML with added CSS 02/13/2020</li>
+    </ol>
   </div>
 
+  <script>
+  window.onscroll = function() {myFunction()};
+
+  var navigation = document.getElementById("navigation");
+  var sticky = navigation.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navigation.classList.add("sticky")
+    } else {
+      navigation.classList.remove("sticky");
+    }
+  }
+  </script>
 
 </body>
 </html>
